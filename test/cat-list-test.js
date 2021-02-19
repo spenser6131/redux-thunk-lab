@@ -18,6 +18,5 @@ describe('<CatList/>', function () {
   it('should have props catPics', function () {
     const wrapper = mount(<CatList catPics={catPics}/>);
     expect(wrapper.props().catPics).to.eq(catPics)
-    expect(wrapper.find('img').length).to.eq(2)
   });
 });
